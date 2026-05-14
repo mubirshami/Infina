@@ -1,0 +1,35 @@
+.terms-container {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.terms-img {
+    width: 275px;
+    cursor: pointer;
+}
+
+.terms-h2 {
+    color: #1D3B6A;
+}
+
+.terms-content-heading  {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1D3B6A;
+    padding-bottom: 0.5rem;
+    padding-top: 0.25rem;
+}
+
+.terms-content-text {
+    font-size: 16px;
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
+.bolded-description  {
+    margin: 0px;
+}
+.bold-text {
+    font-weight: bolder;
+}

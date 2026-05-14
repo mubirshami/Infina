@@ -1,0 +1,77 @@
+.header-styles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative; /* For positioning the menu */
+}
+
+.header-img {
+    width: 50%;
+}
+
+.nenja-img {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Hamburger menu functionality for mobile */
+@media (max-width: 768px) {
+    .header-styles {
+        justify-content: space-between;
+    }
+
+    .header-img {
+        text-align: center;
+        width: unset;
+    }
+
+    .nenja-img {
+        max-width: 200px; /* Increased logo size for mobile */
+    }
+
+    /* Hide buttons by default on mobile */
+    .header-buttons {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        gap: 1rem;
+        /* padding: 1rem 0; */
+    }
+
+    /* Show the buttons when the menu is open */
+    .header-buttons.open {
+        display: flex;
+    }
+
+    /* Show the hamburger icon on mobile */
+    .header-hamburger {
+        display: block;
+    }
+
+  @media (max-width: 425px) {
+    .header-buttons button {
+        font-size: 8px;
+    }
+
+    }
+}
