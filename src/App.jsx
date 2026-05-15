@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/home";
-import Login from "./components/login";
-import Terms from "./components/terms";
-import Privacy from "./components/privacy";
-import Signup from "./components/signup";
-import ForgotPassword from "./components/forgot-password";
-import Packages from "./components/packages";
+import Home from "./pages/home";
+import Login from "./pages/login";
+import Terms from "./pages/terms";
+import Privacy from "./pages/privacy";
+import Signup from "./pages/signup";
+import ForgotPassword from "./pages/forgot-password";
+import Packages from "./pages/packages";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
